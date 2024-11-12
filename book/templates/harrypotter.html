@@ -1,22 +1,18 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
+{% extends 'base.html' %}
+
+{% block title %} 哈利波特 {% endblock %}
+
+{% block content %} 
     
     <h1>哈利波特</h1>
     
-    <hr>
+ 
     <p>讀者:{{name}}</p>
     <p>來自:{{place}}</p>
-    <hr>
-
+ 
     <p>故事簡介</p>
 
     <p>哈利波特系列小說講述了一個孤兒男孩哈利·波特，在十一歲生日時得知自己是位巫師，並被接納進入霍格華茲魔法學校。在學校裡，他結識了忠實的朋友榮恩·衛斯理和妙麗·格蘭傑，一同展開了充滿魔法與冒險的校園生活。然而，哈利身上背負著一個沉重的秘密：他是唯一一個能擊敗黑魔王佛地魔的人。隨著故事的發展，哈利和他的朋友們必須面對越來越多的危險，並揭開隱藏在魔法世界背後的陰謀。</p>
 
-</body>
-</html>
+
+{% endblock %} 

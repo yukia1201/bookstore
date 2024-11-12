@@ -1,18 +1,17 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>書名列表</h1>
+{% extends 'base.html' %}
 
-    <p><a href="{% url 'HarryPotter' %}">哈利波特</a></p>
+{% block title %} 書名列表 {% endblock %}
 
-    <p><a href="{% url 'LordofRing' %}">魔戒</a></p>
+{% block content %} 
 
-    <p><a href="{% url 'JaneEyre' %}">簡愛</a></p>
+<h1>書名列表</h1>
 
-</body>
-</html>
+<p><a href="{% url 'HarryPotter' %}">哈利波特</a></p>
+
+<p><a href="{% url 'LordofRing' %}">魔戒</a></p>
+
+<p><a href="{% url 'JaneEyre' %}">簡愛</a></p>
+
+
+{% endblock %}
+

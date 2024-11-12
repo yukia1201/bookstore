@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}{% endblock %}</title>
+    <style>
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding-top: 2rem;
+            padding-bottom: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <h1>Wenzao Bookstore</h1>
+    <hr>
+
+    {% block content %}{% endblock %}
+
+    <hr>
+    <footer>
+        <p>DCAM 2024 &copy; Devin Liang</p>
+    </footer>
+</body>
+</html>
