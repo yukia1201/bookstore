@@ -1,7 +1,5 @@
 from django.db import models
 
-# Create your models here.
-
 # 資料表建議使用單數名稱
 class book(models.Model):
     bookname  = models.CharField(max_length=20, null=False, verbose_name='書名')
