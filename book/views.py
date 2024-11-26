@@ -1,6 +1,7 @@
 from django.shortcuts import render
 from django.http.response import HttpResponse
 
+from book.models import book
 # Create your views here.
 
 def index(request):

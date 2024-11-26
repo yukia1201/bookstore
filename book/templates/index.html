@@ -4,13 +4,30 @@
 
 {% block content %} 
 
+<div class="container">
 <h1>書名列表</h1>
 
-<p><a href="{% url 'HarryPotter' %}">哈利波特</a></p>
+<table class="table">
+    <tr>
+        <th>書名</th>
+        <th>作者</th>
+        <th>出版社</th>
+        <th>出版日期</th>
+        <th>定價</th>
+    </tr>
+{% for b in bb %}
+<tr>
+    <th>書名:{{b.bookname}}</td>
+    <th>作者:{{b.author}}</td>
+    <th>出版日期:{{b.publisher}}</td>
+    <th>出版社:{{b.pubdate}}</td>
+    <th>定價:{{b.price}}</td>
+    <th>簡介:{{b.content}}</td>
+</tr>
+{% endfor %}
+</table>
+</div>
 
-<p><a href="{% url 'LordofRing' %}">魔戒</a></p>
-
-<p><a href="{% url 'JaneEyre' %}">簡愛</a></p>
 
 
 {% endblock %}
